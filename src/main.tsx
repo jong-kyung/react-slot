@@ -1,10 +1,7 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-function App() {
-  return <div>React Slot Demo</div>;
-}
-
-const rootEl = document.getElementById('root');
+const rootEl = document.getElementById("root");
 if (rootEl) {
   const root = createRoot(rootEl);
   root.render(<App />);
