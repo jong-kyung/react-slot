@@ -1,3 +1,4 @@
+import { createSlotComponent } from "../createSlotComponent";
 import { Slot } from "../Slot";
 import type { SlotsMap } from "../types";
 
@@ -67,4 +68,6 @@ function Template({ slots, title = "Slots Demo" }: TemplateProps) {
   );
 }
 
-export default Template;
+const SlottedTemplate = createSlotComponent(Template);
+
+export default SlottedTemplate;

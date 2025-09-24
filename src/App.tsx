@@ -1,7 +1,4 @@
-import { createSlotComponent } from "./createSlotComponent";
-import Template from "./components/Template";
-
-const SlottedTemplate = createSlotComponent(Template);
+import SlottedTemplate from "./components/Template";
 
 export default function App() {
   return (
