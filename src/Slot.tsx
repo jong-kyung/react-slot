@@ -1,12 +1,12 @@
 import { isValidElement, type ReactElement } from "react";
 import type { SlotProps } from "./types";
 
-export function Slot({
+export const Slot = ({
   name = "default",
   children: fallback,
   slots,
   ...props
-}: SlotProps) {
+}: SlotProps) => {
   const slotContent = slots[name];
 
   if (!slotContent) {
@@ -22,4 +22,4 @@ export function Slot({
   }
 
   return slotContent;
-}
+};

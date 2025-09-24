@@ -39,9 +39,7 @@ export function useSlots(children: ReactNode): SlotsMap {
     });
 
     if (defaultSlot.length > 0) {
-      if (slotsMap.default === undefined) {
-        slotsMap.default = defaultSlot;
-      }
+      slotsMap.default ??= defaultSlot;
     }
 
     return slotsMap;
